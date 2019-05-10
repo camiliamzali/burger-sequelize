@@ -26,13 +26,12 @@ $(document).ready(function () {
   // update burger
   $(".update-burger").on("click", function () {
     const burgerID = $(this).attr("data-id");
-    const eaten = $(this).attr("data-eaten");
 
     $.ajax({
         url: `/api/burger/${burgerID}`,
         method: "PUT",
         data: {
-          eaten: true
+          eaten: 1
         } // req.body
       })
       .then(() => location.reload())
