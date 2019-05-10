@@ -1,4 +1,4 @@
-# burger-restaurant
+# burger-restaurant-sequelize version
 
 ### Description
 This app allows you to add burgers to a list that you can then choose to eat. Each once will have its own button that will move the burger to the Burgers Eaten column when clicked. 
@@ -15,4 +15,5 @@ This app allows you to add burgers to a list that you can then choose to eat. Ea
 ### Dependencies
 * express-handlebars
 * express
-* mysql
+* mysql2
+* sequelize
