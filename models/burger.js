@@ -4,10 +4,7 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
-    eaten: {
-      type: DataTypes.STRING,
-      defaultValue: 0
-    }
+    eaten: DataTypes.STRING,
   });
   return Burger;
 };

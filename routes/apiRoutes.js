@@ -28,7 +28,7 @@ module.exports = app => {
     // Update takes in an object describing the properties we want to update, and
     // we use where to describe which objects we want to update
     db.burgers.update({
-        eaten: req.body.eaten,
+        eaten: true,
       }, {
         where: {
           id: req.body.id

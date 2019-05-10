@@ -24,7 +24,7 @@
           <ul class="list-group">
             {{#each burgerData}}
             {{!-- this is the same as saying !== --}}
-            {{#unless eaten}}
+            {{#unless this.eaten}}
             <li class="list-group-item d-flex">
               {{name}}
               <span class="ml-auto">
@@ -45,7 +45,7 @@
             {{!-- use handlebars to print burgers that have been eaten --}}
             {{#each burgerData}}
             {{!-- this is the same as saying !== --}}
-            {{#if eaten}}
+            {{#if this.eaten}}
             <li class="list-group-item d-flex">
               {{name}}
             </li>
